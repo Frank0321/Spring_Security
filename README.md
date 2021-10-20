@@ -1,10 +1,7 @@
 # Version2
-主要參考 [把玩 Spring Security [2] 探索 Access Control 功能](https://qrtt1.medium.com/hands-on-spring-security-2-f89cb06edd04) 
+主要參考 [把玩 Spring Security [3] 拼上最後一哩路 AuthenticationProvider](https://qrtt1.medium.com/hands-on-spring-security-3-a57b32d933d1) 
 的文章進行撰寫，並補充內容
 
-## 安全領域得主要術語
-- Authentication
-- Authorization
 
 ## 新增限制對應路徑需要的授權
 

@@ -8,7 +8,7 @@ Spring Security 是一個安全框架，它的函式庫提供了
 等有關安全管理的功能
 
 - [影音介紹影片](https://www.youtube.com/watch?v=_-vl4n-CBdI&t=548s)
-- 投影片 : src/main/resources/static/Spring security 簡報
+- [投影片介紹](https://github.com/Frank0321/Spring_Security/blob/master/src/main/resources/static/Spring%20security%20%E7%B0%A1%E5%A0%B1.pdf)
 
 ## 範例程式
 - 以不同的 branch 做區分，並分別寫 README.md 做介紹

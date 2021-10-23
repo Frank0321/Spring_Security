@@ -17,4 +17,16 @@ protected void configure(HttpSecurity http) throws Exception {
 }
 ```
 
+## SecurityConfiguration
+- annotation
+  - @EnableWebSecurity : 啟用 Spring Security 所需要的各種配置
+  
+
+- [Spring Security @EnableWebSecurity的作用](https://matthung0807.blogspot.com/2019/10/spring-security-enablewebsecurity.html)
+
 - [Spring Security for h2-console](https://jessitron.com/2020/06/15/spring-security-for-h2-console/)
+
+
+
+## 參考文章
+- [Spring Security 簡單角色權限範例](https://matthung0807.blogspot.com/2020/04/spring-security-simple-user-role.html)

@@ -1,14 +1,20 @@
-# Spring_Security
+# Spring_Security + JPA
+使用 Spring security 搭配 H2 DB 操作 JPA
 
-## 介紹
-Spring Security 是一個安全框架，它的函式庫提供了
-- 驗證（authentication）
-- 授權（authorization） 
-  
-等有關安全管理的功能
+## h2 設定
+- 需要先指定好開啟 h2 的 url
+- 新增 SecurityConfiguration ，並指定說 h2 的 url 可以通過
+- 並設置說，網站來自自己的 local ，則可以開啟
+- 整體設置如下 :
+```java
+@Override
+protected void configure(HttpSecurity http) throws Exception {
+    http.csrf().disable()
+            .authorizeRequests()
+            .antMatchers("/h2-console/**").permitAll()
+            .and().headers().frameOptions().sameOrigin();
 
-- [影音介紹影片](https://www.youtube.com/watch?v=_-vl4n-CBdI&t=548s)
-- [投影片介紹](https://github.com/Frank0321/Spring_Security/blob/master/src/main/resources/static/Spring%20security%20%E7%B0%A1%E5%A0%B1.pdf)
+}
+```
 
-## 範例程式
-- 以不同的 branch 做區分，並分別寫 README.md 做介紹
+- [Spring Security for h2-console](https://jessitron.com/2020/06/15/spring-security-for-h2-console/)

@@ -2,8 +2,8 @@
 
 ## 介紹
 Spring Security 是一個安全框架，它的函式庫提供了
-- 驗證（authentication）
-- 授權（authorization） 
+- 驗證（authentication） : 系統認為用戶是否可以登入
+- 授權（authorization） : 系統判斷用戶是否有權限執行某些事情
   
 等有關安全管理的功能
 

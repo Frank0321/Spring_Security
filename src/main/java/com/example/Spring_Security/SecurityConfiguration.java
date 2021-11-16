@@ -35,6 +35,11 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
                 .antMatchers("/").permitAll()
                 .and().formLogin();
 
+        http.csrf().disable()
+                .authorizeRequests()
+                .antMatchers("/h2-console/**").permitAll()
+                .and().headers().frameOptions().sameOrigin();
+
     }
 
     @Bean

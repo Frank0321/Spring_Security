@@ -23,7 +23,7 @@ public class SpringSecurityApplication {
 	}
 
 	private void dataSetup(UserRepository repository) {
-		repository.save(User.builder().userName("FranK").password("123456").active(true).roles("ROLE_USER").build());
+		repository.save(User.builder().userName("Frank").password("123456").active(true).roles("ROLE_USER").build());
 		repository.save(User.builder().userName("Kevin").password("654321").active(true).roles("ROLE_USER,ROLE_ADMIN").build());
 	}
 

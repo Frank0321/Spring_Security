@@ -14,5 +14,13 @@ Spring Security 是一個安全框架，它的函式庫提供了
 
 - [讓我們來談談 CSRF](https://blog.techbridge.cc/2017/02/25/csrf-introduction/)
 
+## 登入與登出
+### 預設的情況下
+- /login
+> 會出現一個地方，讓你輸入帳密
+
+- /logout
+> 登出後，會讓你再次登入
+
 ## 範例程式
 - 以不同的 branch 做區分，並分別寫 README.md 做介紹

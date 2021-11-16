@@ -17,10 +17,11 @@ Spring Security 是一個安全框架，它的函式庫提供了
 ## 登入與登出
 ### 預設的情況下
 - /login
-> 會出現一個地方，讓你輸入帳密
-
+> - 會出現一個地方，讓你輸入帳密
+> - ![](https://github.com/Frank0321/Spring_Security/blob/master/src/main/resources/static/security_login.png)
 - /logout
-> 登出後，會讓你再次登入
-
+> - 登出後，會讓你再次登入
+> - ![](https://github.com/Frank0321/Spring_Security/blob/master/src/main/resources/static/security_logout.png)
+> - 或是再次輸入 /login
 ## 範例程式
 - 以不同的 branch 做區分，並分別寫 README.md 做介紹

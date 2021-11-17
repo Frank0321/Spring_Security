@@ -8,6 +8,14 @@
 
 ## 新增限制對應路徑需要的授權
 
+## 程式流程
+- xxxApplication : 需要添加 annotation
+- 依序由外而內為 :   
+- MySecurityConfig (extends WebSecurityConfigurerAdapter)
+- FriendlyFilter (extends OncePerRequestFilter)
+- ApiToken (implements Authentication )
+
+
 ### MySecurityConfig 修改
 -  `/users` 指令要有 USER Role 的人才能使用
 -  `/admin` 並指定要有 ADMIN Role 的人才能使用

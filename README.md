@@ -6,6 +6,13 @@
 - "/users" : 有權限的人才可以使用
 - "/" : 大家都可以開啟
 
+## 程式流程
+- 依序由外而內為 : 
+- MySecurityConfig (extends WebSecurityConfigurerAdapter)
+- FriendlyFilter (extends OncePerRequestFilter)
+- ApiToken (implements Authentication )
+
+
 ## 預設 login
 - 使用 spring security dependency 的狀況下，預設會擋住全部的網址，並導到 "/login" 的頁面
   ![](SecurityVersion2/src/main/resources/static/images/please sign in.png)

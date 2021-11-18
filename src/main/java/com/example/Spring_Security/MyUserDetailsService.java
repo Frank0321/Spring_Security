@@ -1,7 +1,5 @@
 package com.example.Spring_Security;
 
-import com.example.Spring_Security.model.User;
-import com.example.Spring_Security.model.UserRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;

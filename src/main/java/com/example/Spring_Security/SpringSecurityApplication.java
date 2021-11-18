@@ -1,7 +1,5 @@
 package com.example.Spring_Security;
 
-import com.example.Spring_Security.model.User;
-import com.example.Spring_Security.model.UserRepository;
 import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;
 import org.springframework.boot.SpringApplication;

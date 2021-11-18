@@ -4,13 +4,13 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
- * FileName : HomeResource
+ * FileName : HomeController
  * CreatTime : 2021/11/16
  * Author : Frank.Chang
- * Description :
+ * Description : Controller
  */
 @RestController
-public class HomeResource {
+public class HomeController {
 
     @GetMapping("/")
     public String home(){

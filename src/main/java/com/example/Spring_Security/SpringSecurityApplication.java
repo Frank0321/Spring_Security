@@ -17,14 +17,15 @@ public class SpringSecurityApplication {
 		SpringApplication.run(SpringSecurityApplication.class, args);
 	}
 
+	//預先建立資料
 	@Bean
 	ApplicationRunner init(UserRepository repository){
 		return (ApplicationArguments args) -> dataSetup(repository);
 	}
 
 	private void dataSetup(UserRepository repository) {
-		repository.save(User.builder().userName("Frank").password("123456").active(true).roles("ROLE_USER").build());
-		repository.save(User.builder().userName("Kevin").password("654321").active(true).roles("ROLE_USER,ROLE_ADMIN").build());
+		repository.save(User.builder().userName("Admin").password("Admin").active(true).roles("ROLE_USER").build());
+		repository.save(User.builder().userName("User").password("abc123").active(true).roles("ROLE_USER,ROLE_ADMIN").build());
 	}
 
 }

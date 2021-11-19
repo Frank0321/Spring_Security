@@ -9,6 +9,14 @@ import org.springframework.data.domain.AuditorAware;
 import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
+/**
+ * FileName : AuditorAwareImpl
+ * CreatTime : 2021/11/19
+ * Author : Frank.Chang
+ * Description : 使用 security 登入為資料建立名稱
+ * 3. 使用 @EnableJpaAuditing(auditorAwareRef = "auditorAware")，並指定 auditorAware 為 @Bean，確保會被 Spring 掃到
+ */
+
 @SpringBootApplication
 @EnableJpaRepositories(basePackageClasses = UserRepository.class)
 @EnableJpaAuditing(auditorAwareRef = "auditorAware")

@@ -13,7 +13,8 @@ import java.io.Serializable;
  * FileName : Policy
  * CreatTime : 2021/11/19
  * Author : Frank.Chang
- * Description :
+ * Description : 使用 security 登入為資料建立名稱 :
+ * 1. 使用 @EntityListeners(AuditingEntityListener.class)，才能使用 @CreatedBy、@LastModifiedBy
  */
 @Entity
 @Data

@@ -18,6 +18,7 @@
 ## 參考資料
 - [Spring Boot + Spring Security with JPA authentication](https://www.youtube.com/watch?v=TNt3GHuayXs&t=1784s)
 
+
 ## 使用 JPA @CreatedBy、@LastModifiedBy 為 security 登入的名稱
 - 因為使用到 @CreateBy、@LastModifiedBy 所以 Entity 需要使用到 @EntityListeners
 > @EntityListeners(AuditingEntityListener.class)

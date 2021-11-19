@@ -11,7 +11,8 @@ import java.util.Optional;
  * FileName : AuditorAwareImpl
  * CreatTime : 2021/11/19
  * Author : Frank.Chang
- * Description :
+ * Description : 使用 security 登入為資料建立名稱
+ * 2. 實作 AuditorAware，並把資料轉型為 UserDetails 的 name
  */
 public class AuditorAwareImpl implements AuditorAware<String> {
     @Override

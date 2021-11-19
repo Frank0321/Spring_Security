@@ -2,6 +2,18 @@
 
 ## 介紹
 讀取資料庫的資料，來盼定使用者可以存取的權限
+1. SecurityConfiguration (extends WebSecurityConfigurerAdapter):
+- override configure
+> - 設定各網頁的存取權限
+> - 開啟 h2-console，使 h2 db 不會受到 security 而打不開
+- PasswordEncoder ??
+
+2. MyUserDetailsService (implements UserDetailsService)
+- 實作 loadUserByUsername
+> - 登入者為 Entity(User) 抓出來的資料
+
+3. User (implements UserDetails)
+- 實作 UserDetails，並回傳登入的權限、帳密等資訊
 
 ## 參考資料
 - [Spring Boot + Spring Security with JPA authentication](https://www.youtube.com/watch?v=TNt3GHuayXs&t=1784s)

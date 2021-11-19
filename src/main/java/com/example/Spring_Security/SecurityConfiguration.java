@@ -15,7 +15,7 @@ import org.springframework.security.crypto.password.PasswordEncoder;
  * FileName : SecurityConfiguration
  * CreatTime : 2021/11/16
  * Author : Frank.Chang
- * Description : 1. 限制連結開啟的權限
+ * Description : 以 JPA 內的資料進行登入 1. 限制連結開啟的權限
  */
 @EnableWebSecurity
 @RequiredArgsConstructor

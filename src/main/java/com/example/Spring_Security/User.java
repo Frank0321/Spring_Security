@@ -14,7 +14,7 @@ import java.util.stream.Collectors;
  * FileName : User
  * CreatTime : 2021/11/16
  * Author : Frank.Chang
- * Description :
+ * Description : 以 JPA 內的資料進行登入 3. 實作 UserDetails，設定帳號密碼，存取權限
  */
 @Entity
 @Table(name = "User")

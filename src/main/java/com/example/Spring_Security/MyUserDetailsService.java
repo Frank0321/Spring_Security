@@ -12,7 +12,7 @@ import java.util.Optional;
  * FileName : MyUserDetailsService
  * CreatTime : 2021/11/16
  * Author : Frank.Chang
- * Description : 2. 實作 UserDetailsService，以 MyUserDetails 的內容為主
+ * Description : 以 JPA 內的資料進行登入 2. 實作 UserDetailsService，以 MyUserDetails 的內容為主
  */
 @Service
 @RequiredArgsConstructor

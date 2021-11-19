@@ -6,6 +6,8 @@ import org.springframework.stereotype.Service;
 import java.awt.*;
 import java.util.List;
 
+import static java.lang.String.format;
+
 /**
  * FileName : PolicyService
  * CreatTime : 2021/11/19
@@ -25,5 +27,16 @@ public class PolicyService {
     public String saveOne(PolicyEntity policyEntity) {
         policyRepository.save(policyEntity);
         return "save is finsish";
+    }
+
+    public PolicyEntity modify(Long id, String name, String empId) {
+        return policyRepository.findById(id)
+                .map(p ->{
+                    p.setName(name);
+                    p.setEmpId(empId);
+                    return p;
+                })
+                .map(policyRepository::save)
+                .orElseThrow(()-> new IllegalArgumentException(format("id %s not exits", id)));
     }
 }

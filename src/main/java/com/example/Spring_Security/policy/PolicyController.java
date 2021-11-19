@@ -24,9 +24,20 @@ public class PolicyController {
         return policyService.findAll();
     }
 
+    /**
+     * http://localhost:8081/policy/save?name=Frank&empId=1234
+     * @param name
+     * @param empId
+     * @return
+     */
     @GetMapping("/save")
     public String saveOne(@RequestParam String name, @RequestParam String empId){
         PolicyEntity policyEntity = PolicyEntity.builder().name(name).empId(empId).build();
         return policyService.saveOne(policyEntity);
+    }
+
+    @GetMapping("save/{id}")
+    public PolicyEntity update(@RequestParam String name, @RequestParam String empId, @PathVariable("id") Long id){
+        return policyService.modify(id, name, empId);
     }
 }

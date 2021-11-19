@@ -29,6 +29,9 @@ public class PolicyService {
         return "save is finsish";
     }
 
+    /**
+     * 修改資料的方法，需要先從資料庫抓出來，然後修改後，在回傳回去資料中
+     */
     public PolicyEntity modify(Long id, String name, String empId) {
         return policyRepository.findById(id)
                 .map(p ->{

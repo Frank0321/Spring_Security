@@ -26,7 +26,7 @@ public class PolicyService {
 
     public String saveOne(PolicyEntity policyEntity) {
         policyRepository.save(policyEntity);
-        return "save is finsish";
+        return "save is finish";
     }
 
     /**

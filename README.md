@@ -30,4 +30,9 @@ Spring Security 是一個安全框架，它的函式庫提供了
 
 ### 參考
 - [Spring Security - 結合 RestfulApi 的設計](https://blog.kennycoder.io/2019/09/04/Spring-Security-%E7%B5%90%E5%90%88RestfulApi%E7%9A%84%E8%A8%AD%E8%A8%88/)
-- 無法登入成功 ??
+
+#### 使用 postman 登入
+- POST method
+- Body
+- from-data
+- [](https://i.stack.imgur.com/UXQd9.png)

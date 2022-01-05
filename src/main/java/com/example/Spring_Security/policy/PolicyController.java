@@ -36,7 +36,14 @@ public class PolicyController {
         return policyService.saveOne(policyEntity);
     }
 
-    @GetMapping("save/{id}")
+    /**
+     * http://localhost:8081/policy/save/3?name=ABC&empId=12345
+     * @param name
+     * @param empId
+     * @param id
+     * @return
+     */
+    @GetMapping("modify/{id}")
     public PolicyEntity update(@RequestParam String name, @RequestParam String empId, @PathVariable("id") Long id){
         return policyService.modify(id, name, empId);
     }
